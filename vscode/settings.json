@@ -1,0 +1,43 @@
+{
+  // ############
+  // ## Editor ##
+  // ############  
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.autoIndent": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "editor.suggestSelection": "first",
+  "diffEditor.ignoreTrimWhitespace": true,
+  // ###########
+  // ## Style ##
+  // ###########
+  "breadcrumbs.enabled": true,
+  "workbench.settings.editor": "json",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.settings.useSplitJSON": true,
+  "window.titleBarStyle": "custom",
+  "search.location": "panel",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.direnv/**": true,
+    "**/.venv/**": true
+  },
+  "powershell.integratedConsole.showOnStartup": false,
+  "files.insertFinalNewline": true,
+}
