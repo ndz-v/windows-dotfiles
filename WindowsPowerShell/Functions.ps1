@@ -37,7 +37,7 @@ function Get-ComputerInfo {
     }
 }
  
-function Git-LogLive() {
+function GitLogLive() {
     <# 
 	.SYNOPSIS 
 		Outputs git log information live.
@@ -58,8 +58,8 @@ function Git-LogLive() {
     )
 	
     while ($true) {
-        cls
+        Clear-Host
         git --no-pager log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold white)<%an>%Creset' --abbrev-commit --date=relative --all -$lines
-        sleep $sleep
+        Start-Sleep $sleep
     }
 }

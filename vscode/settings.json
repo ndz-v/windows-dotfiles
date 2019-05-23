@@ -38,6 +38,13 @@
     "**/.direnv/**": true,
     "**/.venv/**": true
   },
-  "powershell.integratedConsole.showOnStartup": false,
   "files.insertFinalNewline": true,
+  // ##############
+  // ## Terminal ##
+  // ##############
+  "powershell.integratedConsole.showOnStartup": false,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.shellArgs.windows": [
+    "-NoLogo"
+  ],
 }
