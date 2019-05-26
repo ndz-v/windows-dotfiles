@@ -1,5 +1,7 @@
 # Windows Dotfiles
 
+![](/media/desktop.png)
+
 ## Installation
 
 Copy this command into your elevated PowerShell instance and run it to download this repo and start the installation:
@@ -33,3 +35,5 @@ Get-ChildItem "$HOME\Downloads\" -Filter *.zip | Expand-Archive -DestinationPath
 5. `& "$HOME\dev\windows-dotfiles\Bootstrap.ps1"`
 
     Start the installation.
+
+
