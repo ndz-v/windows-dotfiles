@@ -5,13 +5,13 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "ctrl+shift+meta+enter",
-        "command": "markdown-preview-enhanced.runAllCodeChunks",
-        "when": "editorLangId == 'markdown'"
+        "key": "ctrl+alt+b",
+        "command": "markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
     },
     {
-        "key": "ctrl+shift+enter",
-        "command": "-markdown-preview-enhanced.runAllCodeChunks",
-        "when": "editorLangId == 'markdown'"
+        "key": "ctrl+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
     }
 ]
