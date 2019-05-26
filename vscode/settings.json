@@ -1,7 +1,7 @@
 {
   // ############
   // ## Editor ##
-  // ############  
+  // ############
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.minimap.enabled": false,
@@ -36,8 +36,9 @@
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
     "**/.direnv/**": true,
-    "**/.venv/**": true
+    "**/.venv/**": true,
   },
+  "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
   // ##############
   // ## Terminal ##

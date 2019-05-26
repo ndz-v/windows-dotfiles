@@ -64,12 +64,3 @@ function Get-FromUrl ([String]$url) {
 for ($i = 0; $i -lt $urls.Count; $i++) {
     Get-FromUrl($urls[$i], $url_regex)
 }
-
-
-
-
-
-
-
-
-

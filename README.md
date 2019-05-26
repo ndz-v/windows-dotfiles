@@ -35,5 +35,3 @@ Get-ChildItem "$HOME\Downloads\" -Filter *.zip | Expand-Archive -DestinationPath
 5. `& "$HOME\dev\windows-dotfiles\Bootstrap.ps1"`
 
     Start the installation.
-
-
