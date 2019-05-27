@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-05-26 16:12:15" build="190331">
+		<key name=".Vanilla" modified="2019-05-27 12:25:32" build="190526">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -703,4 +703,3 @@
 		</key>
 	</key>
 </key>
-
