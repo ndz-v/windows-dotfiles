@@ -33,6 +33,10 @@ Rename-Item -NewName "windows-dotfiles" -Path "$HOME\dev\windows-dotfiles-master
 
     Unzip to the dev directory.
 
-5. `& "$HOME\dev\windows-dotfiles\Bootstrap.ps1"`
+5. `Rename-Item -NewName "windows-dotfiles" -Path "$HOME\dev\windows-dotfiles-master"`
+
+    Rename the unzipped folder so branch name is in the name.
+
+6. `& "$HOME\dev\windows-dotfiles\Bootstrap.ps1"`
 
     Start the installation.
