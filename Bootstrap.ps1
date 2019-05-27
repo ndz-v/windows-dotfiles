@@ -1,8 +1,31 @@
+
+
+######################
+## PowerShell setup ##
+######################
+
 Set-ExecutionPolicy RemoteSigned
 
 Set-NetConnectionProfile -NetworkCategory Private
 
+# PowerShell
+New-Item -Force -ItemType SymbolicLink "$HOME\Documents\" -Name "WindowsPowerShell" -Value "$HOME\dev\windows-dotfiles\WindowsPowerShell"
+
+# Install posh git 
+PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
+
+# Install oh-my-posh ##
+Install-Module oh-my-posh -Scope CurrentUser
+
+########################
+## Install Chocolatey ##
+########################
+
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+########################
+## Install software ##
+########################
 
 choco.exe install conemu -y
 choco.exe install git -y
@@ -10,19 +33,11 @@ choco.exe install googlechrome -y
 choco.exe install obs-studio
 choco.exe install vscode -y
 
-# ######################
-# ## Install posh git ##
-# ######################
-PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
+. $PROFILE
 
-# ########################
-# ## Install oh-my-posh ##
-# ########################
-Install-Module oh-my-posh -Scope CurrentUser
-
-# ################################
-# ## Install VS Code Extensions ##
-# ################################
+################################
+## Install VS Code Extensions ##
+################################
 $extensions =
 "eamodio.gitlens",
 "ms-vscode.csharp",
@@ -46,7 +61,7 @@ for ($i = 0; $i -lt $extensions.Count; $i++) {
 ###########################
 
 # PowerShell
-New-Item -Force -ItemType SymbolicLink $HOME\Documents\ -Name WindowsPowerShell $HOME\dev\WindowsPowerShell
+New-Item -Force -ItemType SymbolicLink "$HOME\Documents\" -Name "WindowsPowerShell" -Value "$HOME\dev\windows-dotfiles\WindowsPowerShell"
 
 # Visual Studio Code settings.json
 New-Item -Force -ItemType SymbolicLink $HOME\AppData\Roaming\Code\User\ -Name settings.json -Value $HOME\dev\windows-dotfiles\vscode\settings.json
