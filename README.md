@@ -16,7 +16,7 @@ Rename-Item -NewName "windows-dotfiles" -Path "$HOME\dev\windows-dotfiles-master
 . "$HOME\dev\windows-dotfiles\Bootstrap.ps1"
 ```
 
-## Explenation of the upper command
+## Explanation of the upper command
 
 1. `Set-ExecutionPolicy RemoteSigned`
 
@@ -35,7 +35,7 @@ Rename-Item -NewName "windows-dotfiles" -Path "$HOME\dev\windows-dotfiles-master
 
 5. `Rename-Item -NewName "windows-dotfiles" -Path "$HOME\dev\windows-dotfiles-master"`
 
-    Rename the unzipped folder so branch name is in the name.
+    Rename the unzipped folder so branch name is not in the name.
 
 6. `& "$HOME\dev\windows-dotfiles\Bootstrap.ps1"`
 
