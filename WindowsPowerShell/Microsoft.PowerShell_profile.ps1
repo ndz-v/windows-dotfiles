@@ -9,10 +9,10 @@ $is_conemu = $env:ConEmuANSI
 
 if ($is_conemu -eq "ON") {
     Import-Module oh-my-posh
-    Set-Theme Robbyrussell
+    Set-PoshPrompt robbyrussel
 }
 else {
-    # $LAMBDA = ([char]955)
+    $LAMBDA = ([char]955)
     function global:prompt {
         $realLASTEXITCODE = $LASTEXITCODE
         Write-Host "$(Split-Path $pwd -Leaf) >" -NoNewline

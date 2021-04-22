@@ -29,7 +29,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 choco.exe install conemu -y
 choco.exe install git -y
-choco.exe install googlechrome -y
 choco.exe install obs-studio
 choco.exe install vscode -y
 
