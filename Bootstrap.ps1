@@ -36,6 +36,7 @@ choco.exe install vscode -y
 ################################
 # $installation_block = { 
 #     $extensions =
+#     'albert.TabOut',
 #     'eamodio.gitlens',
 #     'ms-vscode.csharp',
 #     'ms-vscode.powershell',
