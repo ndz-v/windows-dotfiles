@@ -12,12 +12,11 @@ if ($is_conemu -eq "ON") {
     Set-PoshPrompt robbyrussel
 }
 else {
-    $LAMBDA = ([char]955)
     function global:prompt {
         $realLASTEXITCODE = $LASTEXITCODE
         Write-Host "$(Split-Path $pwd -Leaf) >" -NoNewline
-        Write-VcsStatus
-        $global:LASTEXITCODE = $realLASTEXITCODE
+        "$(Write-VcsStatus) "
+        $global:LASTEXITCODE = $realLASTEXITCODE 
         return " "
     }
 }
