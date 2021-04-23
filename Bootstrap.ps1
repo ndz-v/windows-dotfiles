@@ -72,3 +72,9 @@ New-Item -Force -ItemType SymbolicLink $HOME\ -Name .gitconfig -Value $HOME\dev\
 
 # ConEmu Settings
 New-Item -Force -ItemType SymbolicLink $HOME\AppData\Roaming -Name ConEmu.xml -Value $HOME\dev\windows-dotfiles\ConEmu\ConEmu.xml
+
+# Update the current session environment variables
+Update-SessionEnvironment 
+
+# Clone this repository bare
+git clone --bare git@github.com:ndz-v/windows-dotfiles.git .git
