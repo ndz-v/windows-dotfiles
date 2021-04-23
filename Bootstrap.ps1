@@ -29,7 +29,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 choco.exe install conemu -y
 choco.exe install git -y
-choco.exe install obs-studio
 choco.exe install vscode -y
 
 ################################
@@ -61,9 +60,6 @@ choco.exe install vscode -y
 ###########################
 ## Create symbolik links ##
 ###########################
-
-# PowerShell
-New-Item -Force -ItemType SymbolicLink "$HOME\Documents\" -Name "WindowsPowerShell" -Value "$HOME\dev\windows-dotfiles\WindowsPowerShell"
 
 # Visual Studio Code settings.json
 New-Item -Force -ItemType SymbolicLink $HOME\AppData\Roaming\Code\User\ -Name settings.json -Value $HOME\dev\windows-dotfiles\vscode\settings.json
