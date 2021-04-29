@@ -28,6 +28,32 @@ function Show-Wlan { Param([string]$a)netsh.exe wlan show profile name=$a key=cl
 function dotfiles { code "$HOME\dev\windows-dotfiles" }
 function admin { powershell -NoLogo -new_console:a }
 
+# Pipe to wsl to use some linux goodies
+
+# German
+function de {
+    param (
+        [string]$text
+    )
+    wsl trans :de $text
+}
+
+# Egnlish
+function en {
+    param (
+        [string]$text
+    )
+    wsl trans :en $text
+}
+
+# Serbian
+function sr {
+    param (
+        [string]$text
+    )
+    wsl trans :sr $text
+}
+
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
