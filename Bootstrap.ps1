@@ -79,3 +79,8 @@ Update-SessionEnvironment
 
 # Clone this repository bare
 git clone --bare git@github.com:ndz-v/windows-dotfiles.git .git
+
+# Enable WSL feature
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+# Enable Virtual Machine feature
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
