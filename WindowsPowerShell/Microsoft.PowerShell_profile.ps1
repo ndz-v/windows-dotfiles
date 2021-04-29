@@ -30,6 +30,14 @@ function admin { powershell -NoLogo -new_console:a }
 
 # Pipe to wsl to use some linux goodies
 
+# Unspecified language
+function trans {
+    param (
+        [string]$text
+    )
+    wsl trans $text
+}
+
 # German
 function de {
     param (
